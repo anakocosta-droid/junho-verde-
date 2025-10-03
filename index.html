@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História Junho Verde</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eafaea;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      
+    }
+    h1, h2 {
+      color: #2b8a3e;
+    }
+    section {
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 300px;
+    }
+    button {
+      background: #2b8a3e;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background: #256d32;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    img {
+      margin-top: 15px;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+  <section id="login">
+    <h1>Junho Verde 🌱</h1>
+    <p>Digite seu nome para começar a jornada:</p>
+    <img id="loginImg" src="meio-ambiente.gif" alt="Imagem inicial" width="300px">
+    <br><br>
+    <input type="text" id="nome" placeholder="Seu nome aqui...">
+    <br>
+    <button onclick="entrar()">Entrar</button>
+  </section>
+
+  <section id="historia" style="display:none;">
+    <h2 id="titulo"></h2>
+    <p id="texto"></p>
+    <img id="imagem" src="" alt="image (1).png">
+    <div class="buttons">
+      <button onclick="responder('sim')">Sim</button>
+      <button onclick="responder('nao')">Não</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
